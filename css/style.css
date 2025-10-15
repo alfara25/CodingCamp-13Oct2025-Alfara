@@ -1,0 +1,127 @@
+:root {
+  --bg: #0a1128;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.heading-caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  color: #eeefef;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.header {
+  display: Flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 2cm;
+  padding-left: 2cm;
+  padding-bottom: 30%;
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-left: 5rem;
+  margin-top: 0%;
+}
+
+.todo-input h2 {
+  display: flex;
+  font-size: 18px;
+  color: #0b163c;
+  margin: 0;
+}
+
+.todo-input input {
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid rgb(40, 49, 83);
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.todo-input input:focus {
+  border-color: #b4d7ea;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
+
+.todo-date {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-left: 5rem;
+  margin-top: 0%;
+}
+
+.todo-date input {
+  display: flex;
+  border-bottom: solid rgb(40, 49, 83);
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.todo-date:focus {
+  border-color: #b4d7ea;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
