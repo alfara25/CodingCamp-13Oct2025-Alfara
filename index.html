@@ -25,27 +25,90 @@
   </head>
 
   <body>
+    <!-- javascript link -->
+    <script src="js\script.js"></script>
+
     <!-- heading start -->
     <header class="header">
+      <!-- title in header-->
       <div class="heading">
         <h1 class="heading-caveat">
           To-do <span class="poppins-bold"><br />List.</span>
         </h1>
       </div>
 
+      <!-- todo-input-->
       <div class="todo-input">
         <h2 class="poppins-bold">Just do it :</h2>
         <input
+          id="todo-input"
           class="w-full sm:w-96 md:w-[400px]"
           type="text"
           placeholder="add a to-do"
         />
       </div>
 
+      <!-- date -->
       <div class="todo-date">
-        <h2 class="poppins-bold">Due Date</h2>
-        <input type="date" id="tanggal" name="tanggal" />
+        <h2 class="poppins-bold">Due Date :</h2>
+        <input type="date" id="todo-date" />
+      </div>
+
+      <!-- add button -->
+      <div>
+        <button class="add-button poppins-bold" onclick="addTask()">+</button>
+      </div>
+
+      <!-- count tasks in transparent-box -->
+      <div class="transparent-box poppins-bold">
+        <br />
+        <p id="task-count">
+          <span id="task-count" class="text-[50px]">0</span><br /><br />Task(s)
+          Left <br /><br />
+        </p>
       </div>
     </header>
+
+    <!-- Main Start -->
+    <!--Show input  -->
+    <main>
+      <!-- filter & clear all section -->
+      <div class="filter-section poppins-bold">
+        <label for="filter-date" class="poppins-bold">Filter by Date :</label>
+        <input type="date" id="filter-date" />
+        <button class="filter-btn poppins-bold" onclick="filterTasks()">
+          Filter
+        </button>
+        <button class="clear-btn poppins-bold" onclick="clearAllTasks()">
+          Clear All
+        </button>
+      </div>
+
+      <!-- table-todo -->
+      <section class="todo-table">
+        <table id="todo-table">
+          <thead>
+            <tr>
+              <th class="poppins-bold">No.</th>
+              <th class="poppins-bold">Task</th>
+              <th class="poppins-bold">Due Date</th>
+            </tr>
+          </thead>
+          <tbody id="todo-tbody">
+            <tr class="no-task">
+              <td colspan="3">No task added yet</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <p>&copy; 2025 Alfara To-do List</p>
+      <a href="https://www.artstation.com/" target="_blank"
+        >Background Source</a
+      >
+    </footer>
   </body>
 </html>
